@@ -1,0 +1,242 @@
+create_cloud
+50 0 0 2 1 1
+create_cloud
+50 7 12 3 2 3
+create_cloud
+50 8 -3 2 1 4
+rotate
+2
+-2
+create_cloud
+50 12 -1 2 2 5
+k-means
+3
+hierarchical
+1
+2
+save_field
+save_storages
+stop
+
+
+
+create_cloud
+500 0 0 2 1 1
+save_field
+create_cloud
+500 15 8 3 2 2
+rotate
+1
+-1
+save_field
+create_cloud
+500 7 12 3 2 3
+save_field
+create_cloud
+500 8 -3 2 1 4
+rotate
+3
+-2
+save_field
+create_cloud
+500 12 -1 2 2 5
+save_field
+clear_field
+read_field
+3
+k-means
+4
+wave
+1.5
+save_field
+save_storages
+clear_field
+read_field
+4
+k-means
+5
+save_field
+save_storages
+clear_field
+read_field
+6
+read_storages
+k-means
+5
+save_field
+save_storages
+stop
+
+
+create_cloud
+10 0 0 5 3 1
+create_cloud
+10 40 25 3 4 2
+rotate
+1
+0.5
+hierarchical
+2
+2
+print_clusters_to_files
+1
+stop
+
+create_cloud
+300 0 0 10 5 1
+print_field
+interpolation
+0.5
+50
+stop
+
+create_cloud
+300 0 0 10 5 1
+print_field
+interpolation_1d
+0.5
+200
+stop
+
+
+create_cloud
+300 0 0 10 5 1
+print_field
+interpolation
+0.5
+200
+stop
+
+
+
+create_cloud
+300 0 0 10 5 1
+print_field
+interpolation_1d
+0.5
+200
+stop
+
+
+create_cloud
+500 0 0 10 20 1
+regression_1d
+0.5
+-30
+stop
+
+
+
+
+create_cloud
+100 0 0 10 20 1
+regression_1d
+1
+0 0
+regression_1d
+3
+0 0
+regression_1d
+10
+0 0
+stop
+
+
+
+create_cloud
+1000 -6 0 1 6 1
+create_cloud
+1000 0 0 1 7 2
+rotate
+1
+0.5
+create_cloud
+1000 6 0 1 6 3
+wave
+0.8
+wave
+1
+wave
+1.2
+save_field
+save_storages
+dbscan
+3
+0.8
+dbscan
+3
+1
+dbscan
+3
+1.2
+save_field
+save_storages
+k-means
+3
+k-means
+4
+save_field
+save_storages
+clear_field
+clear_storages
+read_field
+2
+read_storage
+5
+read_storage
+6
+save_field
+save_storages
+stop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create_cloud
+10 0 -1 0.2 0.6 1
+create_cloud
+10 1.8 2.6 0.2 0.6 2
+create_cloud
+10 -1.8 2.6 0.2 0.6 3
+create_cloud
+10 1.8 6.2 0.2 0.6 4
+create_cloud
+10 -1.8 6.2 0.2 0.6 5
+create_cloud
+10 0 9 0.2 0.6 6
+rotate
+1
+-0.5
+rotate
+2
+0.5
+rotate
+3
+-0.5
+rotate
+4
+0.5
+save_field
+hierarchical
+1
+6
+print_clusters_to_files
+1
+stop
+
+
+
